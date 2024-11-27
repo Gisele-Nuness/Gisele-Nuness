@@ -1,4 +1,21 @@
-## Bem-vindo(a) ao perfil da Gisele-Nuness 😁
+## 🌟 Bem-vindo(a) ao perfil da Gisele Nuness! 😊
+
+Sou uma profissional em transição de carreira, abraçando o universo da **programação** com determinação e paixão. 💻✨  
+Atualmente, estou me dedicando a aprender e aplicar conhecimentos em **desenvolvimento web**, com foco em tecnologias modernas e práticas que fazem a diferença no mundo digital.
+
+### 🚀 O que você encontrará aqui:
+- 📂 Projetos que refletem meu aprendizado e evolução na área de **tecnologia**.  
+- 🛠️ Uma jornada repleta de desafios, inovação e crescimento contínuo.  
+- 🌐 Minha determinação em transformar ideias em **soluções reais** por meio do código.  
+
+### 💡 Sobre mim:
+- 📖 **Estudo**: Constantemente explorando novas ferramentas e frameworks.  
+- 💼 **Meta**: Me tornar uma desenvolvedora com impacto positivo no setor.  
+- 🎯 **Valores**: Persistência, criatividade e aprendizado contínuo.  
+
+---
+
+Convido você a explorar meus repositórios, acompanhar meu progresso e, se desejar, colaborar comigo nessa incrível jornada de transição e descoberta! 🌟
 
  <div>
    <a href="https://github.com/Gisele-Nuness">
