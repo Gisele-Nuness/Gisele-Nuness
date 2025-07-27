@@ -50,11 +50,14 @@ Convido você a explorar meus repositórios, acompanhar meu progresso e, se dese
 </div>
  <br>
 
+---
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/output/pacman-contribution-graph.svg">
   <img alt="Gráfico de contribuições estilo Pacman" src="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/output/pacman-contribution-graph.svg">
 </picture>
+
+---
 
 <br>
 
