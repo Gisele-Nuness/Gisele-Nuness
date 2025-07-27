@@ -1,0 +1,23 @@
+name: Generate Pacman Graph
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"  # Roda semanalmente aos domingos
+  workflow_dispatch:      # Permite rodar manualmente
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: Gisele-Nuness
+          outputs: |
+            ./output/pacman-contribution-graph.svg
+            ./output/pacman-contribution-graph-dark.svg
+      - name: Commit e push dos arquivos
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "update Pacman graph"
+          add: "output/*"
