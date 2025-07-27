@@ -48,9 +48,28 @@ Convido você a explorar meus repositórios, acompanhar meu progresso e, se dese
  
 
 </div>
+ <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/main/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/main/output/pacman-contribution-graph.svg">
-  <img alt="Gráfico de contribuições estilo Pacman" src="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/main/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/output/pacman-contribution-graph.svg">
+  <img alt="Gráfico de contribuições estilo Pacman" src="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/output/pacman-contribution-graph.svg">
 </picture>
+
+<br>
+
+<div align="center">
+
+  <!-- Gráfico de atividade -->
+  [![Gisele Nuness's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Gisele-Nuness&bg_color=0d1117&color=c535d0&line=d1056c&point=d1056c&area=true&area_color=d1056c&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+  <!-- Streak stats -->
+  <img src="https://streak-stats.demolab.com?user=Gisele-Nuness&locale=pt-br&mode=weekly&theme=omni&hide_border=false&border_radius=5&date_format=M%20j%5B,%20Y%5D" height="156" alt="streak graph"  /> <br/>
+
+  <!-- Troféus -->
+  <img src="https://github-profile-trophy.vercel.app?username=Gisele-Nuness&theme=omni&column=2&row=1&margin-w=5&margin-h=1&no-frame=false&no-bg=true" height="150" alt="trophy graph"  />
+</div>
+
+<!-- Footer animado -->
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:e61c9b,100:10002B"/>
+
