@@ -16,6 +16,7 @@ jobs:
           outputs: |
             ./output/pacman-contribution-graph.svg
             ./output/pacman-contribution-graph-dark.svg
+          animation: pacman
       - name: Commit e push dos arquivos
         uses: EndBug/add-and-commit@v9
         with:
