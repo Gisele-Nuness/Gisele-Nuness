@@ -1,7 +1,13 @@
 name: Update stats snapshots
 on:
-  schedule: [{ cron: "17 5 * * *" }]  # roda 1x/dia
-  workflow_dispatch:                   # permite rodar manualmente
+  schedule:
+    - cron: "0 * * * *"   # roda 1x por hora (UTC)
+  workflow_dispatch:       # permite rodar manualmente
+
+concurrency:
+  group: stats-snapshot
+  cancel-in-progress: true
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
