@@ -19,13 +19,12 @@ Convido você a explorar meus repositórios, acompanhar meu progresso e, se dese
 
 
 <div align="center">
-  <a href="https://github.com/Gisele-Nuness">
-    <img height="180"
-         src="https://github-readme-stats.vercel.app/api?username=Gisele-Nuness&show_icons=true&theme=jolly&include_all_commits=true&cache_seconds=1400&v=2" />
-    <img height="180"
-         src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gisele-Nuness&layout=compact&langs_count=6&theme=jolly&cache_seconds=1400&v=2" />
-  </a>
+  <a href="https://github.com/Gisele-Nuness">
+    <img height="180" src="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/main/assets/stats.svg" />
+    <img height="180" src="https://raw.githubusercontent.com/Gisele-Nuness/Gisele-Nuness/main/assets/top-langs.svg" />
+  </a>
 </div>
+
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
