@@ -1,8 +1,11 @@
 name: Update stats snapshots
 on:
   schedule:
-    - cron: "0 * * * *"   # roda 1x por hora (UTC)
-  workflow_dispatch:       # permite rodar manualmente
+    - cron: "0 * * * *"   # 1x por hora (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 concurrency:
   group: stats-snapshot
@@ -13,14 +16,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download stats
+        with:
+          fetch-depth: 0   # necessário para push
+
+      - name: Download stats (cache-bust + retry + logs)
         run: |
+          set -euo pipefail
           mkdir -p assets
-          curl -L "https://github-readme-stats.vercel.app/api?username=Gisele-Nuness&show_icons=true&theme=jolly" -o assets/stats.svg
-          curl -L "https://github-readme-stats.vercel.app/api/top-langs/?username=Gisele-Nuness&layout=compact&langs_count=6&theme=jolly" -o assets/top-langs.svg
-      - name: Commit if changed
+          TS=$(date +%s)
+          echo "Baixando em $TS ..."
+          curl -fL --retry 5 --retry-all-errors --max-time 60 \
+            -H "Accept: image/svg+xml" \
+            "https://github-readme-stats.vercel.app/api?username=Gisele-Nuness&show_icons=true&theme=jolly&v=$TS" \
+            -o assets/stats.svg
+          curl -fL --retry 5 --retry-all-errors --max-time 60 \
+            -H "Accept: image/svg+xml" \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=Gisele-Nuness&layout=compact&langs_count=6&theme=jolly&v=$TS" \
+            -o assets/top-langs.svg
+          echo "Arquivos baixados:"
+          ls -lh assets
+
+      - name: Commit and push if changed (verbose)
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/*.svg
-          git diff --quiet && echo "No changes" || git commit -m "chore: update stats snapshots" && git push
+          git add -A assets
+          echo "STATUS após git add:"
+          git status --porcelain=v1
+          if git diff --cached --quiet; then
+            echo "Sem alterações para commitar."
+          else
+            git commit -m "chore: update stats snapshots"
+            git push origin HEAD:main
+          fi
