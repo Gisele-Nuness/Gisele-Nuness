@@ -1,0 +1,20 @@
+name: Update stats snapshots
+on:
+  schedule: [{ cron: "17 5 * * *" }]  # roda 1x/dia
+  workflow_dispatch:                   # permite rodar manualmente
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download stats
+        run: |
+          mkdir -p assets
+          curl -L "https://github-readme-stats.vercel.app/api?username=Gisele-Nuness&show_icons=true&theme=jolly" -o assets/stats.svg
+          curl -L "https://github-readme-stats.vercel.app/api/top-langs/?username=Gisele-Nuness&layout=compact&langs_count=6&theme=jolly" -o assets/top-langs.svg
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git diff --quiet && echo "No changes" || git commit -m "chore: update stats snapshots" && git push
