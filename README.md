@@ -75,8 +75,7 @@ Convido você a explorar meus repositórios, acompanhar meu progresso e, se dese
   <!-- Streak stats -->
   <img src="https://streak-stats.demolab.com?user=Gisele-Nuness&locale=pt-br&mode=weekly&theme=omni&hide_border=false&border_radius=5&date_format=M%20j%5B,%20Y%5D" height="156" alt="streak graph"  /> <br/>
 
-  <!-- Troféus -->
-  <img src="https://github-profile-trophy.vercel.app?username=Gisele-Nuness&theme=omni&column=2&row=1&margin-w=5&margin-h=1&no-frame=false&no-bg=true" height="150" alt="trophy graph"  />
+
 </div>
 
 <!-- Footer animado -->
